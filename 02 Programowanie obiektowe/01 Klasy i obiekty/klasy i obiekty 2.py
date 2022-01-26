@@ -34,15 +34,17 @@ class Ziemniaki:
         self.wielkosc = wielkosc
         self.cena = cena
 
+def wypisz_produkt(produkt):
+    print(f"Nazwa {produkt.nazwa}, Kategoria {produkt.kategoria}, Cena {produkt.cena}")
 
-def wypisz_zamowienie(zamowienie):
+def wypisz_zamowienie(zamowienia):
     print("=" * 20)
-    print(f"Zamówienie złożone przez {zamowienie.imie} {zamowienie.nazwisko}")
-    print(f"o łącznej wartości {zamowienie.total_cena} PLN")
+    print(f"Zamówienie złożone przez {zamowienia.imie} {zamowienia.nazwisko}")
+    print(f"o łącznej wartości {zamowienia.total_cena} PLN")
     print("zamówione produkty:")
-    for produkty in zamowienie.lista_produktow:
+    for produkty in zamowienia.lista_produktow:
         print("\t", end="")
-        wypisz_zamowienie(produkty)
+        wypisz_produkt(produkty)
     print("=" *20)
     print()
 

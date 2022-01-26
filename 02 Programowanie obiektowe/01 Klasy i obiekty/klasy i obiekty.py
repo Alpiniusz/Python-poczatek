@@ -57,10 +57,10 @@ if __name__== '__main__':
     run_homework()
 
 
-# ziemniak_1 = Ziemniaki()
-# ziemniak_2 = Ziemniaki()
-# jablko = Jablka()
-# produkt = Produkt()
+# ziemniak_1 = Ziemniaki("Stare ziemniaki","M",2.5)
+# ziemniak_2 = Ziemniaki("Młode ziemniaki","S",3.5)
+# jablko = Jablka("Czerwone","M",3.8)
+# produkt = Produkt("Ciastka","Słodycze",4.2)
 #
 # print("ziemniak_1 ", type(ziemniak_1))
 # print("ziemniak_2 ", type(ziemniak_2))
